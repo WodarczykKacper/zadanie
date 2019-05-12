@@ -1,0 +1,774 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+.privacy {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#header {
+    text-align: center;
+    position: relative;
+    padding: 44px 0;
+    height: 30%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 25px;
+    line-height: 1;
+    color: #2f2f2f;
+    font-family: "Hind";
+    font-weight: 600;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 11px;
+    /*    line-height: 17px;*/
+    color: #565e66;
+    padding-top: 22px;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+h3 {
+
+    padding-top: 3%;
+    font-size: 25px;
+
+    /*    margin-top: -2%;*/
+    color: #ffffff;
+    font-family: "Hind";
+    font-weight: 600;
+    flex-basis: 100%;
+}
+
+h4 {
+    /*        padding-bottom: 2%;*/
+    /*    padding-top: 1%;*/
+    font-size: 13px;
+    line-height: 2;
+    margin-top: -2%;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 400;
+    flex-basis: 100%;
+}
+
+h4 > a {
+    font-family: "Roboto - Bold";
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+#container {
+    width: 100%;
+    margin-bottom: 195px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contCircle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+.icons {
+    border-radius: 50%;
+    height: 54px;
+    width: 54px;
+    box-sizing: border-box;
+    border: 3px solid #d4dbe0;
+    background-color: #f4f7f9;
+    position: absolute;
+    transition: .3s all ease-in-out;
+}
+
+.icons:hover {
+    background-color: #e3e6e8;
+    border: 3px solid #c3cad0;
+
+}
+
+#img {
+    height: 332px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    top: 11%;
+    left: 11%;
+    width: 332px;
+    background-image: url(ddd.png);
+}
+
+#img > img {
+    position: relative;
+}
+
+#management {
+    left: 181px;
+    top: -29px;
+}
+
+#grants {
+    left: 285px;
+
+}
+
+#marketing {
+    left: 76px;
+}
+
+#insurance {
+    top: 78px;
+}
+
+#crowdfunding {
+    top: 181px;
+    left: -29px;
+}
+
+#interFinans {
+    top: 78px;
+    left: 363px;
+}
+
+#lawInter {
+    top: 181px;
+    left: 391px;
+}
+
+#estate {
+    left: 181px;
+    top: 391px;
+}
+
+#productivity {
+    top: 277px;
+}
+
+#commercialization {
+    left: 77px;
+    top: 356px;
+}
+
+#funding {
+    left: 363px;
+    top: 277px;
+}
+
+#acquisition {
+    left: 286px;
+    top: 356px;
+
+}
+
+#marketing::before,
+#insurance::before,
+#crowdfunding::before,
+#productivity::before,
+#commercialization::before {
+    content: '';
+    right: 73px;
+    font-size: 11px;
+    color: #2f2f2f;
+    font-family: "Hind";
+    font-weight: 600;
+}
+
+#management::before {
+    content: '';
+    top: -29px;
+    font-size: 11px;
+    color: #2f2f2f;
+    font-family: "Hind";
+    font-weight: 600;
+}
+
+#estate:before {
+    content: '';
+    top: 70px;
+    font-size: 11px;
+    /*    line-height: 23px;*/
+    color: #2f2f2f;
+    font-family: "Hind";
+    font-weight: 600;
+}
+
+#grants::before,
+#interFinans::before,
+#funding::before,
+#acquisition::before,
+#lawInter::before {
+    content: '';
+    left: 73px;
+    font-size: 11px;
+    color: #2f2f2f;
+    font-family: "Hind";
+    font-weight: 600;
+}
+
+.icons::before {
+    content: '';
+    position: absolute;
+    white-space: nowrap;
+}
+
+#management::before {
+    content: 'Zarządzanie projektami';
+}
+
+#grants::before {
+    content: 'Dotacje i granty międzynarodowe';
+}
+
+#marketing::before {
+    content: 'Marketing 360°';
+
+}
+
+#insurance::before {
+    content: 'Ubezpiecznia miedzynarodowe';
+
+}
+
+#crowdfunding::before {
+    content: 'Crowdfunding';
+}
+
+#interFinans::before {
+    content: 'Międzynardowa księgowość, kadry i podatki';
+}
+
+#lawInter::before {
+    content: 'Prawo międzynarodowe';
+
+}
+
+#estate::before {
+    content: 'Nieruchomości';
+
+}
+
+#productivity::before {
+    content: 'Podnoszenie produktywności';
+
+}
+
+#commercialization::before {
+    content: 'Komercjalizacja właności intelektualnej';
+
+}
+
+#funding::before {
+    content: 'Finansowanie handlu międzynarodowego';
+
+}
+
+#acquisition::before {
+    content: 'Pozyskiwanie inwestorów (M&A)';
+
+}
+
+#back {
+    background-image: url(footer.png);
+    height: 100%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+select {
+    background: url(select.png) no-repeat 90% white;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+#back > img {
+    width: 100%;
+}
+
+form .privacy {
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+}
+
+h5 {
+    font-size: 10px;
+    color: #ffffff;
+    font-family: "Roboto";
+    font-weight: 400;
+    text-align: center;
+}
+
+#img > img {
+    width: 331px;
+    height: 331px;
+}
+
+.icons {
+    width: 58px;
+    height: 58px;
+    border: 3px solid #d4dbe0;
+    background-color: #f4f7f9;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#bigCircle {
+    width: 420px;
+    height: 420px;
+    border: 1px solid #d4dbe0;
+    background-color: #fff;
+    display: flex;
+    position: relative;
+    border-radius: 50%;
+    border: 1px solid #d4dbe0;
+}
+
+#footer {
+    height: 68.5%;
+    background-color: #274291;
+}
+
+#formContainer {
+    flex-basis: 49.5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: .5%;
+}
+
+#formContainer > input,
+#formContainer > select {
+    flex-basis: 32%;
+    height: 16%;
+    border-radius: 4px;
+    padding: 15px;
+    color: #565e66;
+
+    margin-bottom: 2.5%;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+
+}
+
+textarea {
+    width: 100%;
+    height: 28%;
+    padding: 20px 15px;
+    border-radius: 4px;
+    position: relative;
+    color: #565e66;
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 400;
+    background-color: #ffffff;
+    border: 1px solid #dbdbdb;
+}
+
+#formContainer > input:last-of-type::placeholder {
+    vertical-align: super;
+}
+
+.privacy > h5 > a {
+    color: #35a8e0;
+    text-decoration: none;
+
+}
+
+
+p {
+    display: flex;
+    position: absolute;
+    margin: 0;
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: 700;
+    z-index: 99;
+    color: #fff;
+}
+
+#btn {
+    width: 17.5%;
+    height: 37px;
+    border-radius: 4px;
+    background-color: #35a8e0;
+    border-color: #35a8e0;
+    margin: auto;
+    text-align: center;
+    font-family: "Roboto";
+    font-weight: 700;
+    color: #fff;
+    font-size: 10px;
+    /*    line-height: 37px;*/
+}
+
+#two,
+#three,
+#four {
+    display: none;
+}
+
+@media (max-width: 1025px) {
+    #header {
+        height: 25%;
+    }
+
+    #formContainer {
+        flex-basis: 100%;
+        justify-content: space-around;
+        margin-bottom: 5%;
+    }
+
+    textarea {
+        width: 97%;
+    }
+
+    #formContainer > input,
+    #formContainer > select {
+        flex-basis: 30%;
+    }
+
+    h4 {
+        padding-bottom: 2%;
+        padding-top: 2%;
+    }
+
+    #footer {
+        height: 40%;
+        background-color: #274291;
+    }
+
+}
+
+@media (max-width: 969px) {
+    #header {
+        height: 20%;
+    }
+
+    #container {
+        transform: scale(.8);
+    }
+}
+
+@media (max-width: 769px) {
+    #header {
+        height: 20%;
+    }
+
+    #container {
+        height: 60%;
+        margin-bottom: 0;
+        overflow: hidden;
+        transform: scale(.9);
+    }
+
+    #btn {
+        height: 30px;
+    }
+
+    textarea {
+        height: 23%;
+        width: 86%;
+    }
+
+    #formContainer > input,
+    #formContainer > select {
+        flex-basis: 35%;
+    }
+
+    #footer {
+        height: auto;
+    }
+}
+
+@media (max-width: 569px) {
+
+    h2 {
+        padding: 20px 10px;
+    }
+
+    #container {
+        height: 140%;
+        transform: scale(1);
+    }
+
+    .contCircle {
+        position: absolute;
+    }
+
+    #two,
+    #three,
+    #four {
+        display: block;
+    }
+
+    #one {
+        top: -26%;
+    }
+
+    #two {
+        left: -55%;
+        top: 15%;
+    }
+
+    #three {
+        top: 47%;
+        right: -53%;
+    }
+
+    #four {
+        bottom: 0;
+        height: 9%;
+    }
+
+    #one > #bigCircle > #acquisition::before {
+        content: 'acquisition inwestorów (M&A)';
+        left: -38px;
+        top: 65px;
+    }
+
+    #one > #bigCircle > #commercialization::before {
+        content: 'commercialization właności intelektualnej';
+        left: -70px;
+        top: 65px;
+    }
+
+    #one > #bigCircle > #funding {
+        display: none;
+    }
+
+    #one > #bigCircle > #productivity {
+        display: none;
+    }
+
+    #two > #bigCircle > #grants {
+        display: none;
+    }
+
+    #two > #bigCircle > #acquisition {
+        display: none;
+    }
+
+    #three > #bigCircle > #marketing {
+        display: none;
+    }
+
+    #three > #bigCircle > #commercialization {
+        display: none;
+    }
+
+    #four > #bigCircle > #insurance {
+        display: none;
+    }
+
+    #four > #bigCircle > #interFinans {
+        display: none;
+    }
+
+    p {
+        display: none;
+    }
+
+    #four > #bigCircle > #marketing::before {
+        content: 'Marketing 360°';
+        left: -10px;
+        top: -30px;
+    }
+
+    #four > #bigCircle > #grants::before {
+        content: 'grants i granty międzynarodowe';
+        left: -42px;
+        top: -30px;
+    }
+
+    #footer {
+        height: auto;
+    }
+
+    #formContainer > input,
+    #formContainer > select {
+        height: 10%;
+        flex-basis: 48%;
+        text-align: center;
+    }
+
+    #btn {
+        height: 30px;
+    }
+
+    textarea {
+        flex-basis: 80%;
+        height: 18%;
+    }
+
+    #one > #bigCircle > #commercialization::before {
+        content: 'commercialization właności intelektualnej';
+        left: -17px;
+        top: 64px;
+        text-align: center;
+        display: block;
+        width: 83px;
+        white-space: pre-wrap;
+    }
+
+    #one > #bigCircle > #acquisition::before {
+        content: 'acquisition inwestorów (M&A)';
+        left: -14px;
+        text-align: center;
+        width: 83px;
+        top: 65px;
+        white-space: pre-wrap;
+    }
+
+    #four > #bigCircle > #grants::before {
+        content: 'grants i granty międzynarodowe';
+        left: -12px;
+        top: -40px;
+        white-space: pre-wrap;
+        width: 83px;
+
+    }
+}
+
+
+@media (max-width: 424px) {
+    #container{
+        font-size:2em;
+    }
+    #one {
+        top: -31%;
+    }
+
+    #two {
+        left: -78%;
+        top: 15%;
+    }
+
+    #three {
+        top: 45%;
+        right: -76%;
+    }
+
+    #four {
+        bottom: 0;
+        height: 10%;
+    }
+
+
+}
+
+@media (max-width: 384px) {
+
+    #formContainer > input,
+    #formContainer > select {
+        height: 10%;
+        flex-basis: 85%;
+        text-align: center;
+    }
+
+    textarea {
+        flex-basis: 85%;
+
+    }
+
+    #container {
+        height: 200%;
+    }
+
+    #one {
+        top: -25%;
+    }
+
+    #two {
+        left: -86%;
+        top: 15%;
+    }
+
+    #three {
+        top: 45%;
+        right: -84%;
+    }
+
+    #four {
+        bottom: 0;
+        height: 9%;
+    }
+
+    h5 {
+        padding: 0px 10px;
+        width: 75%;
+    }
+
+    #formContainer {
+        margin-bottom: 15%;
+    }
+
+}
+
+@media (max-width: 324px) {
+    #header {
+        height: 30%;
+    }
+
+    #two {
+        left: -100%;
+        top: 18%;
+    }
+
+    #three {
+        top: 48%;
+        right: -98%;
+    }
+
+    #four {
+        bottom: 0;
+        height: 10%;
+    }
+
+    #two > #bigCircle > #interFinans::before {
+        content: 'Międzynardowa księgowość, kadry i podatki';
+        white-space: pre-wrap;
+        width: 175px;
+    }
+
+    #two > #bigCircle > #funding::before {
+        content: 'funding handlu międzynarodowego';
+        white-space: pre-wrap;
+        width: 194px;
+    }
+}
